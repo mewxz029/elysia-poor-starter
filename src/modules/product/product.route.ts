@@ -1,6 +1,6 @@
 import Elysia from 'elysia';
-import { CreateProductController } from './commands/create-product/create-product.controller';
-import { UpdateProductController } from './commands/update-product/update-product.controller';
+import { CreateProductController } from './commands/private/create-product/create-product.controller';
+import { UpdateProductController } from './commands/private/update-product/update-product.controller';
 
 const PrivateProductRoutes = new Elysia({ prefix: 'private/product' })
   .use(CreateProductController)
